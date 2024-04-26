@@ -8,14 +8,13 @@ package Frames;
  *
  * @author Arell
  */
-public class FrameGameOver extends javax.swing.JFrame {
+public class FramePrimerLugar extends javax.swing.JFrame {
 
     /**
-     * Creates new form FrameGameOver
+     * Creates new form PrimerLugar
      */
-    public FrameGameOver() {
+    public FramePrimerLugar() {
         initComponents();
-        this.setTitle("Pantalla de Game Over");
     }
 
     /**
@@ -27,32 +26,21 @@ public class FrameGameOver extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Volver = new javax.swing.JLabel();
-        IFondo = new javax.swing.JLabel();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/multimedia/drive-download-20240419T015035Z-001/Exit.png"))); // NOI18N
-        Volver.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                VolverMouseClicked(evt);
-            }
-        });
-        getContentPane().add(Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 400, 160, 40));
-
-        IFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/multimedia/drive-download-20240419T015035Z-001/GameOver.png"))); // NOI18N
-        getContentPane().add(IFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 470));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 600, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 404, Short.MAX_VALUE)
+        );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VolverMouseClicked
-        // TODO add your handling code here:
-        FramePrincipal principal = new FramePrincipal();
-        principal.setVisible(true);this.dispose();
-    }//GEN-LAST:event_VolverMouseClicked
 
     /**
      * @param args the command line arguments
@@ -71,26 +59,25 @@ public class FrameGameOver extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrameGameOver.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FramePrimerLugar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrameGameOver.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FramePrimerLugar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrameGameOver.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FramePrimerLugar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrameGameOver.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FramePrimerLugar.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrameGameOver().setVisible(true);
+                new FramePrimerLugar().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel IFondo;
-    private javax.swing.JLabel Volver;
     // End of variables declaration//GEN-END:variables
 }

@@ -31,7 +31,7 @@ int level = 0;
         initComponents();
      //   this.setSize(490, 501);
         IMario.setFocusable(true);
-        this.setTitle("Ing. Arellano [Sonic Proyect]");
+        this.setTitle("Ing de Software [Sonic Proyect]");
     }
 
     /**
